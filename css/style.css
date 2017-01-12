@@ -2,8 +2,6 @@
 * {
 	margin: 0;
 	padding: 0; 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box; 
 }
 
@@ -113,88 +111,91 @@ header:before {
 }
 
 /****************************** PLAY WITH ***********************************************/
+
 .play_with {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url(../image/box-opened.png) no-repeat;
-    background-position: calc(50% + 20px) calc(100% + 20px);
-    background-size: 100%;
-    width: 450px;
-    min-height: 500px;
+    background: url(../image/box-opened.png) no-repeat calc(50% + 25px) calc(100% + 20px);
+    padding-bottom: 245px;
 }
 
-.one {
-	color: #F3EFC9;
-	font:  25px 'blisspro-bold', sans-serif;
-	text-transform: uppercase;
-	text-shadow: 0px 2px #745A3C;
+.wrap--play_with {
+    width: 350px;
+    margin: 40px auto 0;
+
 }
 
-.two {
-	color:#F3EFC9;
-	position: relative;
-	font:  60px 'blisspro-bold', sans-serif;
-	text-shadow: 0px 2px #745A3C;
+.yellow-text {
+    color: #f3efc9;
+    text-shadow: 0 2px #745a3c;
+    font-family: 'blisspro-bold';
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-
-.two:before {
-	content: url(../image/hand-left.png);
-	position: absolute;
-	top: 8px;
-  left: -90px;
+.line1 {
+    font-size: 28px;
 }
 
-.two:after {
-	content: url(../image/hand-right.png);
-	position: absolute;
-	top: 5px;
-  left: 135px;
+.line2 {
+    font-size: 50px;
+    position: relative;
 }
 
-.three {
-	background: url(../image/red-bg-l3.png) no-repeat;
-  background-size: 100%;
-	position: relative;
-	color: #F3EFC9;
-	width: 190px;
-  height: 111px;
-  text-align: center
+.red-bg {
+    background: url(../image/red-bg-l3.png) repeat-x;
+    background-size: 100% 100%;
+    margin: 10px auto 0;
+    position: relative;
+    width: 185px;
+    height: 111px;
 }
 
-.midl_top {
-	font-size: 18px;
-	position: absolute;
-	top: 0px;
-  left: 63px;
+.red-bg:after {
+    background: url(../image/red-bg-l3-right.png) no-repeat;
+    right: -51px;
 }
 
-.midl_bottom {
-	font-size: 18px;
-	position: absolute;
-	top: 87px;
-  left: 35px;
+.red-bg:before {
+    background: url(../image/red-bg-l3-left.png) no-repeat;
+    left: -51px;
 }
 
-.forty{
-   position: relative;
-   font: 85px 'blisspro-bold', sans-serif;
+.red-bg:before, .red-bg:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 71px;
+    height: 111px;
+    bottom: -11px;
 }
 
-.three:after {
-	content: url(../image/red-bg-l3-right.png);
-	position: absolute;
-	top: 9px;
-  left: 170px;
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.three:before {
-	content: url(../image/red-bg-l3-left.png);
-	position: absolute;
-	top: 9px;
-  left: -50px;
+.bottom {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
 }
+
+.red-bg--mony {
+    font-size: 74px;
+    padding: 12px 0
+}
+
+.line3 span {
+    color: #efebbb;
+    font: 18px 'blisspro-regular';
+    text-shadow: none;
+    text-transform: lowercase;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
 
 /****************************** REGISTER FORM ***********************************************/
 .heading_form{

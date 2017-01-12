@@ -1,0 +1,17 @@
+{
+  "name": "Christmas",
+  "homepage": "https://github.com/VladDi1987/ChristmasPage",
+  "authors": [
+    "Vlad Di <dyshliuk1987@gmail.com>"
+  ],
+  "description": "landing",
+  "main": "main",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
