@@ -1,0 +1,38 @@
+@media screen and (max-width: 1030px){
+.present_block{ justify-content: space-between; }
+
+.girl{ display: none;}
+
+}
+
+@media screen and (max-width:750px){
+.present_block{ display: none; }
+
+.active_present{ display: block; }
+
+.landing-bg{
+	background: url(../image/mob-bg.jpg) no-repeat;
+	background-position: center bottom;
+	background-size:  100% auto;
+	background-attachment:scroll;
+}
+
+.wrap_active_present{
+	display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    }
+
+.game img{ border-radius: none; }
+
+.gm_hidden{ display: none; }
+
+}
+
+@media screen and (max-width: 340px) {
+.gm_hidden{	display: none; }
+
+}
